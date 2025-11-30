@@ -1,73 +1,103 @@
-# React + TypeScript + Vite
+# Obscura Cypher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun, interactive web application for encrypting and decrypting messages using various cipher techniques. Built with React and Vite.
 
-Currently, two official plugins are available:
+## 🎯 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Obscura Cypher is a playful encryption tool that allows users to:
 
-## React Compiler
+- Enter a message they want to encrypt
+- Select from various cipher methods
+- Generate encrypted messages to share with friends
+- Decrypt messages using the corresponding cipher
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Note:** This is a fun, educational project for entertainment purposes only. It is **not** designed for securing sensitive information or real-world cryptographic needs.
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Visit the live application: [https://hanschehaiber.github.io/react-obscura-cypher/](https://hanschehaiber.github.io/react-obscura-cypher/)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React** - UI framework
+- **TypeScript** - Language
+- **Vite** Build tool
+- **ESLint** - Code linter
+- **GitHub Pages** - Deployment platform
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/hanschehaiber/react-obscura-cypher.git
+cd react-obscura-cypher
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## 🎮 Usage
+
+1. Enter your message in the text area
+2. Select a cipher method from the available options
+3. Click to encrypt your message
+4. Share the encrypted message and cipher method with your friends
+5. Your friends can use the same cipher to decrypt the message
+
+## 📜 Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build the project for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint to check code quality
+- `npm test` - Run the test suite
+- `npm run deploy` - Deploy to GitHub Pages
+
+## 🧪 Testing
+
+This project uses Jest and React Testing Library for unit testing:
+
+```bash
+npm test
+```
+
+## 🚀 Deployment
+
+The project is configured for easy deployment to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+This will:
+
+1. Build the project
+2. Deploy to the `gh-pages` branch
+3. Make it available at the GitHub Pages URL
+
+
+## 👤 Author
+
+**Hans Chehaiber**
+
+- GitHub: [@hanschehaiber](https://github.com/hanschehaiber)
+
+## ⭐ Show Your Support
+
+Give a ⭐️ if you enjoyed this project or found it interesting!
+
+---
+
+_Note: This is an educational project created for portfolio purposes. Do not use for encrypting sensitive or confidential information._
