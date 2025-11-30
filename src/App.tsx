@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>Testing Deployment</h1>
+      <h1>Testing Deployment 2</h1>
       <h1>Hans' Vite + React App</h1>
       <div className="card">
         <Message></Message>
